@@ -13,6 +13,7 @@ use App\Filament\Pages\ClientDevices;
 use App\Filament\Pages\ClientAccounts;
 use App\Filament\Pages\DataFst;
 use App\Filament\Pages\SettingsPage;
+use App\Filament\Pages\SystemLogs;
 use App\Filament\Resources\RackResource;
 use App\Filament\Resources\CustomerResource;
 use App\Filament\Resources\VisitPermitResource;
@@ -44,7 +45,7 @@ class AdminPanelProvider extends PanelProvider
                 Dashboard::class, Inbox::class, InfrastructureTopology::class,
                 DataColoClient::class, ColocationView::class, DataInterkoneksi::class,
                 SecurityCenter::class, ClientDevices::class, ClientAccounts::class,
-                DataFst::class, SettingsPage::class,
+                DataFst::class, SettingsPage::class, SystemLogs::class,
             ])
             ->widgets([StatsOverview::class]);
     }
